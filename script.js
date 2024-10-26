@@ -42,23 +42,19 @@ function stopReels() {
             // 중앙 위치 계산
             const reelHeight = 304; // .reel의 높이
             const imgHeight = 2160; // 이미지 높이
-    
-            // 각 슬롯의 9등분된 이미지 높이
             const imageHeightInSlot = imgHeight / 9; // 각 이미지 높이
-    
-            // 각 슬롯의 중앙 위치 설정
-            const centerPosition = (reelHeight - imageHeightInSlot) / 2; // 9등분된 슬롯의 중앙 위치
+            const centerPosition = (reelHeight - imageHeightInSlot) / 2; // 중앙 위치
             
-            // 슬롯 멈출 때의 위치 설정
             reel.style.top = `-${(randomImageIndex * imageHeightInSlot) - centerPosition}px`;
         }, index * 500); // 각 슬롯마다 0.5초 시간차를 두고 멈추기
     });
-    
-    
+
+    // 알림창 표시를 2초 후로 설정
     setTimeout(() => {
-        showAlert(randomImageIndex); // 슬롯 멈춘 후 알림 창 표시
-    }, 1500); // 슬롯 멈춘 후 1.5초 후에 팝업 표시
+        showAlert(randomImageIndex); // 2초 후 알림 창 표시
+    }, 2500); // 2000ms = 2초
 }
+
 
 // 알림창 띄우기
 function showAlert(randomIndex) {
@@ -74,14 +70,14 @@ function showAlert(randomIndex) {
     // 버튼 클릭 이벤트 (0부터 7까지 랜덤 숫자에 따라 사이트 이동)
     document.getElementById('alert-button').onclick = function() {
         const sites = [
-            'https://www.naver.com',
-            'https://www.google.com',
-            'https://www.pusan.ac.kr',
-            'https://swedu.pusan.ac.kr',
-            'https://www.instagram.com',
-            'https://www.pinterest.com',
-            'https://map.naver.com',
-            'https://papago.naver.com'
+            'https://webzinefinders.imweb.me/#s202410207dcae16781c0c',
+            'https://webzinefinders.imweb.me/#s20241021cac297ba6d10f ',
+            'https://webzinefinders.imweb.me/#s202410211f6b33005203b',
+            'https://webzinefinders.imweb.me/#s20241003a372dd44acd70',
+            'https://webzinefinders.imweb.me/#s2024102098648c2b37d35',
+            'https://webzinefinders.imweb.me/#s202410202f8784893bd24',
+            'https://webzinefinders.imweb.me/#s202410206e9c5f0011ba5',
+            'https://webzinefinders.imweb.me/#s20241003a372dd44acd70'
         ];
         window.location.href = sites[randomIndex]; // 지정된 웹사이트로 이동
     };
@@ -95,14 +91,14 @@ function showAlert(randomIndex) {
 
     // 랜덤 인덱스에 따라 다른 메시지를 표시할 수 있습니다.
     const messages = [
-        "축하합니다! 상금을 받으셨습니다!", // 0
-        "좋은 하루 되세요!", // 1
-        "다시 도전해보세요!", // 2
-        "행운이 가득하길!", // 3
-        "멋진 보너스가 기다리고 있습니다!", // 4
-        "이런! 다시 한 번 시도해 보세요!", // 5
-        "축하합니다! 또 다른 기회입니다!", // 6
-        "행운을 빕니다!" // 7
+        "영도에서 취향을 가꾸는 씨씨윗북의 이야기를 들어보세요", // 0
+        "영도에서 함께하는 라보드목선의 이야기를 들어보세요", // 1
+        "영도에서 함께하는 신기산업의 이야기를 들어보세요", // 2
+        "영도에서 일하는 출근러 PAFI의 이야기를 들어보세요", // 3
+        "영도에서 취향을 가꾸는 빌라드보나흐의 이야기를 들어보세요", // 4
+        "영도에 사람들을 모으는 비결, 피아크의 이야기를 들어보세요", // 5
+        "영도에서 함께하는 영도희망21의 이야기를 들어보세요", // 6
+        "영도로 출근하는 PAFI의 이야기를 들어보세요" // 7
     ];
 
     // 알림창에 표시할 메시지

@@ -52,7 +52,7 @@ body, html {
 
 /* 이미지의 크기와 위치 설정 */
 .reel img {
-    width: 240px; /* 기존 184px의 크기 유지 */
+    width: 200px; /* 기존 184px의 크기 유지 */
     height: 2160px; /* 기존 1656px의 크기 유지 */
     object-fit: cover; /* 이미지 비율 유지 */
     position: absolute; /* 슬롯 이미지 겹치기 위해 설정 */
