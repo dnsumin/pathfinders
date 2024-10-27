@@ -106,7 +106,7 @@ body, html {
     transform: translate(-50%, -50%); /* 중앙 정렬 보강 */
     color: #f2d7bc; /* 텍스트 색상 설정 */
     text-align: center; /* 텍스트 가운데 정렬 */
-    font-size: 18px; /* 텍스트 크기 조정 */
+    font-size: 22px; /* 텍스트 크기 조정 */
     z-index: 1001; /* 다른 요소들 위에 표시되도록 설정 */
 }
 
@@ -133,14 +133,14 @@ body, html {
 /* 화면 가로 사이즈가 1000px 이하일 때 */
 @media (max-width: 1000px) {
     .content-container {
-        transform: scale(0.5); /* 전체 컨텐츠를 0.8배로 줄임 */
+        transform: scale(0.45); /* 전체 컨텐츠를 0.45배로 줄임 */
         transform-origin: center; /* 변환 기준 설정 */
     }
 }
 /* 화면 가로 사이즈가 3000px 이상일 때 */
 @media (min-width: 2000px) {
     .content-container {
-        transform: scale(1.5); /* 전체 컨텐츠를 1.2배로 확대 */
+        transform: scale(1.5); /* 전체 컨텐츠를 1.5배로 확대 */
         transform-origin: center; /* 변환 기준 설정 */
     }
 }
