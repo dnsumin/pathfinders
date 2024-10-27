@@ -138,7 +138,7 @@ body, html {
         transform-origin: center; /* 변환 기준 설정 */
     }
     .alert-message {
-        font-size: 18px; /* 원하는 폰트 크기로 조정 */
+        font-size: 22px; /* 원하는 폰트 크기로 조정 */
         white-space: nowrap; /* 줄바꿈 방지 */
     }
 }
