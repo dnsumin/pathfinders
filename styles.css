@@ -108,6 +108,7 @@ body, html {
     text-align: center; /* 텍스트 가운데 정렬 */
     font-size: 22px; /* 텍스트 크기 조정 */
     z-index: 1001; /* 다른 요소들 위에 표시되도록 설정 */
+    white-space: nowrap; /* 줄바꿈 방지 */
 }
 
 .alert-button {
