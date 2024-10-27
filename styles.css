@@ -133,7 +133,7 @@ body, html {
 /* 화면 가로 사이즈가 1000px 이하일 때 */
 @media (max-width: 1000px) {
     .content-container {
-        transform: scale(0.4); /* 전체 컨텐츠를 0.8배로 줄임 */
+        transform: scale(0.5); /* 전체 컨텐츠를 0.8배로 줄임 */
         transform-origin: center; /* 변환 기준 설정 */
     }
 }
